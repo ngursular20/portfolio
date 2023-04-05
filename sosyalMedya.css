@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("ajans360-sosyalmedya-1.jpg");
+    height: 100vh;
+    background-size: 100% 100%;
+
+}
+a{
+    color:black;
+    
+}
+.container{
+    width: 90%;
+    margin:auto;
+
+}
+
+/*!header start */
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(0,0,255,0.1);
+}
+header nav {
+
+    display: flex; 
+    justify-content: space-between; /*soldakiyle sağdakini en uzak noktaya atııyor.*/
+    align-items: center;
+    height: 100%;
+    
+    }
+
+header nav  .logo a{
+    color:black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size :20px;
+}
+nav ul{
+    list-style: none;
+    display: flex; /* ul nin içerisindeki elemanları yan yana getirir.*/
+    column-gap: 30px; /*aralarını açıyor. */
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{
+    color:blue;
+   transition:color .25s ease; /* renk değiştirmeyi yavaşlatır*/
+    
+}
+nav  .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px; /* uzaklaştırmak için*/
+}
+
+nav .menu .menu-button{
+    
+
+color: #0ba2c0;
+text-decoration: none;
+background-color:rgba(0,0,255,0.1) ;
+padding :10px 20px;
+border-radius: 56px;
+transition: all .35s ease;
+}
+
+nav .menu .menu-button:hover{
+    
+
+   background-color:blue;
+   color:white;
+
+    }
+/*!header end */
+
+/*! section-start */
+
+.links a{
+    background-color:rgba(0,0,255,0.8) ;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    border-radius: 56px;
+    padding:20px;
+    width:280px;
+    display:flex;
+    margin-top: 20px;
+    column-gap: 80px; /* uzaklaştırma etiketi */
+}
+.content{
+width: 100%;
+margin-left: 50%;
+margin-top: 10%;
+}
+.content h1{
+ color:black;
+}
+/*! section-end*/

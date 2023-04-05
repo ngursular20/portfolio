@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("cicek.jpg");
+    height: 100vh;
+    background-size: 100% 100%;
+
+}
+a{
+    color:purple;
+    
+}
+.container{
+    width: 80%;
+    margin:auto;
+
+}
+
+/*!header start */
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(0,0,255,0.1);
+}
+header nav {
+
+    display: flex; 
+    justify-content: space-between; /*soldakiyle sağdakini en uzak noktaya atııyor.*/
+    align-items: center;
+    height: 100%;
+    
+    }
+
+header nav  .logo a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size :20px;
+}
+nav ul{
+    list-style: none;
+    display: flex; /* ul nin içerisindeki elemanları yan yana getirir.*/
+    column-gap: 30px; /*aralarını açıyor. */
+}
+nav ul li a{
+    color:purple;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{
+    color:purple;
+   transition:color .25s ease; /* renk değiştirmeyi yavaşlatır*/
+    
+}
+nav  .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px; /* uzaklaştırmak için*/
+}
+
+nav .menu .menu-button{
+    
+
+color: purple;
+text-decoration: none;
+background-color:rgba(0,0,255,0.1) ;
+padding :10px 20px;
+border-radius: 56px;
+transition: all .35s ease;
+}
+
+nav .menu .menu-button:hover{
+    
+
+   background-color:purple;
+   color:white;
+
+    }
+/*!header end */
+
+/*! responsive-begin */
+ @media (max-width:576px){
+     .container{
+         width:100%;
+         padding-left: 12px;
+         padding-right: 12px;
+     }
+ }
+/*! responsive-finish */
+
+/*! section start */
+.content{
+    color:black;
+    height:calc(100vh-100px);
+    padding-top: 80px;
+}
+.content h1{
+    font-size:80px;
+    text-align: center;
+}
+
+.content p{
+    font-size:24px;
+    text-align: center;
+    margin-top:2px;
+   
+}
+ .content .motto p  {
+     width:40%;
+  text-align: center;
+  margin-left:500px;
+   background-color:rgba(0,0,255,0.1);
+   color:white;
+   font: size 50px;
+ }
+
+
+/*!section finish */
